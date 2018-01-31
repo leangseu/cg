@@ -1,0 +1,28 @@
+body {
+  /*display everything from left to right*/
+  float: left;
+  display: flex;
+  position: relative;
+  width: auto;
+  padding: 20px;
+}
+
+div {
+  /*add padding to make it more readable*/
+  position: relative;
+  width: auto;
+  padding: 10px 30px;
+}
+
+li {
+  /*padding to make it more readable*/
+  padding: 5px;
+}
+
+.assignment-list {
+  /*the position always 50px from the right side(not include 20px padding from body tag)*/
+  position: fixed;
+  right: 50px;
+  border-style: double;
+  min-height: 300px;
+}
