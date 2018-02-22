@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home work 1</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Computer Graphics HW1</h1>
+    <form>
+      <div class="tool-container">
+        <label><input type="radio" name="tools" value="circle" checked>circle</label>
+        <label><input type="radio" name="tools" value="line" >line</label>
+        <label><input type="radio" name="tools" value="ellipse" >ellipse</label>
+        <label><input type="radio" name="tools" value="rectangle">rectangle</label>
+        <label><input type="radio" name="tools" value="polygons" >polygons</label>
+        <label><input type="radio" name="tools" value="polylines" >polylines</label>
+      </div>
+      <div class="button-container">
+        <input type="color" id="color" value="#ff0000">
+        <input type="number" step="1" min="1" value="1" pattern="\d*" id="pixel">
+        <button id="clear">Clear</button>
+        <button id="undo">Undo</button>
+        <button id="done">Done</button> <span id="hint">Press done to save the drawing state</span>
+      </div>
+      <span id="selected"></span>
+    </form>
+    <canvas id="canvas" width=800 height=400></canvas>
+  </div>
+  <script src="./js/javascript.js"></script>
+</body>
+</html>
